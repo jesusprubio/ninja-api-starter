@@ -1,0 +1,28 @@
+{
+  "name": "cat",
+  "plural": "cats",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "breed": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "angry": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

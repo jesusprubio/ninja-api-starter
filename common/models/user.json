@@ -1,0 +1,27 @@
+{
+  "name": "user",
+  "plural": "users",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "birthday": {
+      "type": "date"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "cats": {
+      "type": "hasMany",
+      "model": "cat",
+      "foreignKey": "_id"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,51 @@
+{
+  "name": "ninja-api-starter",
+  "description": "My boilerplate to implement a modern REST API.",
+  "version": "0.0.0",
+  "dependencies": {
+    "bluebird": "^3.1.5",
+    "cfenv": "^1.0.3",
+    "compression": "^1.6.1",
+    "cors": "^2.7.1",
+    "debug": "^2.2.0",
+    "lodash": "^4.0.1",
+    "log-symbols": "^1.0.2",
+    "loopback": "^2.26.2",
+    "loopback-boot": "^2.16.0",
+    "loopback-component-explorer": "^2.2.0",
+    "loopback-component-passport": "^2.0.0",
+    "loopback-connector-mongodb": "^1.13.3",
+    "loopback-datasource-juggler": "^2.44.0",
+    "require-dir": "^0.3.0",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^4.0.0",
+    "eslint-plugin-json": "^1.2.0",
+    "nodemon": "^1.8.1",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jesusprubio/ninja-api-starter"
+  },
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node .",
+    "test-unit": "./node_modules/.bin/tape test/unit/**/*.js | ./node_modules/.bin/tap-diff",
+    "test-functional": "node . & sleep 3 && ./node_modules/.bin/tape test/functional/**/*.js | ./node_modules/.bin/tap-diff && kill -9 $!",
+    "test": "npm run-script test-unit & npm run-script test-functional",
+    "watch": "DEBUG=ninja-api-starter* ./node_modules/.bin/nodemon",
+    "lint": "./node_modules/.bin/eslint common/** scripts/** server/** test/**",
+    "nsp": "./node_modules/.bin/nsp check",
+    "depcheck": "./node_modules/.bin/depcheck --ignores=compression,cors,loopback-component-explorer,loopback-connector-mongodb,serve-favicon,babel-eslint",
+    "cont-int": "npm run-script lint & npm run-script test"
+  },
+  "engines": {
+    "node": "5.5.0"
+  },
+  "license": "GPL-3.0"
+}

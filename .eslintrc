@@ -1,0 +1,14 @@
+{
+  "extends": "airbnb/base",
+
+  "/": "We reset this rules set by the style guide,",
+  "//": "They use Babel and it adds use strict automatically.",
+  "///": "The rest are for non-contemplated cases.",
+
+  "rules": {
+    "strict": 0,
+    "max-len": [1, 100, 4]
+  },
+
+  "plugins": ["json"]
+}
