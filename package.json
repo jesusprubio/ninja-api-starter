@@ -44,6 +44,7 @@
     "depcheck": "./node_modules/.bin/depcheck --ignores=compression,cors,loopback-component-explorer,loopback-connector-mongodb,serve-favicon,babel-eslint",
     "cont-int": "npm run-script lint & npm run-script test"
   },
+  "private": true,
   "engines": {
     "node": "5.5.0"
   },
