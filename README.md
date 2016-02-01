@@ -1,12 +1,12 @@
 # Ninja API starter
 
-[![Continuos integration status](https://api.travis-ci.org/jesusprubio/ninja-api-starter.svg)]((https://api.travis-ci.org/jesusprubio/ninja-api-starter.svg)
+[![Continuos integration status](https://api.travis-ci.org/jesusprubio/ninja-api-starter.svg)](https://api.travis-ci.org/jesusprubio/ninja-api-starter.svg)
 [[![Dependencies](https://david-dm.org/jesusprubio/ninja-api-starter.svg)](https://david-dm.org/jesusprubio/ninja-api-starter)
 [![devDependencies](https://david-dm.org/jesusprubio/ninja-api-starter/dev-status.svg)](https://david-dm.org/jesusprubio/ninja-api-starter#info=devDependencies)
 
 My boilerplate implementing a modern REST API. A cheap (in terms of money and productivity), but scalable and secure, microservices architecture based in [LoopBack](http://loopback.io/).
 
-NOTE: This is a work in progress.
+NOTE: A work in progress.
 
 To achieve it I tried to [KISS](https://en.wikipedia.org/wiki/KISS_principle) as far as possible:
 - LoopBack: It gives me (for free!) most of the common stuff I must implement by myself when I had to start an API: Login system (with OAuth), CRUD, etc. Ref.: http://blog.jeffdouglas.com/2015/07/07/roll-your-own-api-vs-loopback/.
