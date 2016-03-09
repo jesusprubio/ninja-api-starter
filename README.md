@@ -10,7 +10,7 @@ NOTE: A work in progress.
 
 To achieve it I tried to [KISS](https://en.wikipedia.org/wiki/KISS_principle) as far as possible:
 - LoopBack: It gives me (for free!) most of the common stuff I must implement by myself when I had to start an API: Login system (with OAuth), CRUD, documentation, etc. Ref.: http://blog.jeffdouglas.com/2015/07/07/roll-your-own-api-vs-loopback/.
-- [Bluebird](http://bluebirdjs.com/): Normally I prefer to use [Node ES6/7 native stuff](https://nodejs.org/en/docs/es6/), but Bluebird performance is better for now. Moreover it gives me some useful functions like "Promise.promisify" or "Promise.series". Refs.:
+- [Bluebird](http://bluebirdjs.com/): Normally I prefer to use [Node ES6/7 native stuff](https://nodejs.org/en/docs/es6/), but Bluebird performance is better for now. Moreover it gives me some useful (non-standard) methods like "Promise.promisify". Refs.:
  - http://bluebirdjs.com/docs/why-bluebird.html.
  - http://programmers.stackexchange.com/a/279003.
  - http://ciplogic.com/index.php/blog/92-native-vs-bluebird-vs-core-promise-benchmark.
