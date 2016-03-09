@@ -21,7 +21,7 @@ To achieve it I tried to [KISS](https://en.wikipedia.org/wiki/KISS_principle) as
 
 
 And what about the services?
-- [Bluemix](http://bluemix.net/)/[Heroku](http://heroku.com/): These on-demand deployment platforms allow us to focus in what matter, the code of our app. I couldn't live without Heroku but It's always good to have alternatives (and redundancy!). Ref: https://blog.codeship.com/exploring-microservices-architecture-on-heroku/
+- [Bluemix](http://bluemix.net/)/[Heroku](http://heroku.com/): These on-demand deployment platforms allow us to focus in what matters, the code of our app. I couldn't live without Heroku but It's always good to have alternatives (and redundancy!). Ref: https://blog.codeship.com/exploring-microservices-architecture-on-heroku/
 - [MongoDB](https://www.mongodb.org/): The most NoSQL used option and my favorite one. All provided options in both cases are similar. Before launching to production it's mandatory to chose one which supports on-demand provisioning.
 - [Layer](https://layer.com/): With the power of [Erlang](https://www.erlang.org/) under the hood. One of the best options to add a consistent chat. As an ex VoIP developer and security researcher please, don't do it yourself ;).
 - [SendGrid](https://sendgrid.com/): Transactional email delivering, the most used option.
